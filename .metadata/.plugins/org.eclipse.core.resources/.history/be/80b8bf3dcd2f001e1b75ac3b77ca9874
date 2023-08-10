@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>만화책 쇼핑몰 장바구니</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #f2f2f2;
+}
+
+.cart-table img {
+    max-height: 100px;
+}
+
+.cart-table input[type="number"] {
+    width: 40px;
+}
+
+.totals {
+    text-align: right;
+}
+
+.totals p {
+    margin: 5px 0;
+}
+
+.totals p.final-amount {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+    </style>
+</head>
+
+<body>
+    <h1>만화책 쇼핑몰 장바구니</h1>
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>상품정보</th>
+                <th>수량</th>
+                <th>상품금액</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img src="comic1.jpg" alt="만화책1 이미지">
+                    <span>만화책 1</span>
+                </td>
+                <td>
+                    <input type="number" min="1" value="1">
+                </td>
+                <td>$20.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="comic2.jpg" alt="만화책2 이미지">
+                    <span>만화책 2</span>
+                </td>
+                <td>
+                    <input type="number" min="1" value="1">
+                </td>
+                <td>$15.00</td>
+            </tr>
+            <!-- 추가 상품을 필요한 만큼 더 추가할 수 있습니다. -->
+        </tbody>
+    </table>
+    <div class="totals">
+        <p>
+            <span>상품금액:</span> $35.00
+        </p>
+        <p>
+            <span>추가금액:</span> $5.00
+        </p>
+        <p class="final-amount">
+            <span>최종 결제금액:</span> $40.00
+        </p>
+    </div>
+</body>
+
+</html>
